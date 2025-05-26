@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Informe - Actividad en Google Cloud</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Evaluación 2 en Google Cloud</h1>
+    <h1>Caso Avistamientos</h1>
+    <div class="paso">
+      <h2>Grupo 7</h2>
+      <h2>Integrantes: Alonso Gómez - Cristian Ferreira</h2>
+    </div>
+    <br>
+    <div class="paso">
+      <h2>Introducción</h2>
+      <p>Contexto...</p>
+    </div>   
+</header>
+
+  <main>
+    <div class="paso">
+      <h2>Paso 1: Acceso a Google Cloud Console</h2>
+      <p>Ingresamos a <a href="https://console.cloud.google.com" target="_blank">https://console.cloud.google.com</a> e iniciamos sesión con nuestra cuenta de Google.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155505.png" alt="Acceso a Google Cloud Console">
+    </div>
+
+    <div class="paso">
+      <h2>Paso 2: Aceptar los terminos y condiciones</h2>
+      <p>Desde el panel principal, seleccionamos "Nuevo Proyecto" para organizar los recursos del entorno.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155517.png" alt=" Aceptacion los terminos y condiciones">
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155557 (2).png" alt="Aceptacion de nuevo proyecto">
+    </div>
+
+    <div class="paso">
+      <h2>Paso 3: Iniciamos Activate Cloud Shell</h2>
+      <p>Activamos  Activate Cloud Shell.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155643.png" alt="">
+      <p>Continuamos el mensaje de Cloud Shell.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155704.png" alt="">
+      <p>Aceptamos y autorizamos el mensaje de Cloud Shell.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155721.png" alt="">
+      <p>Ingresamos el siguiente codigo en la Shell y lo ejecutamos:</p>
+      <p>"gcloud beta services identity create --service=dataprep.googleapis.com"</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155808.png" alt="">
+      <p>Verificamos la respuesta de la creación</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155826.png" alt="">
+    </div>
+
+    <div class="paso">
+      <h2>Paso 4: Iniciamos Dataprep</h2>
+      <p>Nos dirigimos all products.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155850.png" alt="">
+      <p>Nos dirigimos en "Analytics" y seleccionamos -> "Alreryx Designer Cloud".</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155913.png" alt="">
+      <p>Luego aceptamos condiciones.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 155932.png" alt="">
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160042.png" alt="">
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160053.png" alt="">
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160111.png" alt="">
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160125.png" alt="">
+    </div>
+
+     <div class="paso">
+      <h2>Paso 5: Cargamos nuestro Dataset y ingresamos en Dataprep</h2>
+      <p>Nos dirigimos a "Create a new row".</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160149.png" alt="">
+      <p>Nos aparece la siguiente interfaz y daremos a "Connect to your data".</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160325.png" alt="">
+      <p>Saldrá la siguiente interfaz".</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160337.png" alt="">
+      <p>Nos dirigimos en "Upload" para cargar nuestros datos".</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160411.png" alt="">
+      <p>Cargamos nuestro dataset en "Choose files" y nos saldrá una ventana para escoger nuestro archivo.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160430.png" alt="">
+      <p>Al finalizar cambiamos el nombre de nuestro dataset como nos solicitan a "ovni.csv".</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160531.png" alt="">
+      <p>Volvemos atras y editaremos el nombre a "Grupo7" como representación a ambos alumnos que realizan este proceso.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160609.png" alt="">
+      <p>Luego nos dirigimos a "recipe" y visualizaremos los datos adjuntados en esta plataforma.</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160618.png" alt="">
+      <p>Finalmente visualizaremos la siguiente interfaz que trabajaremos</p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 160713.png" alt="">
+    </div>
+
+     <div class="paso">
+      <h2>Paso 6: Preparamos los datos en Dataprep</h2>
+      <p>
+        Visualizamos nuestras columnas, gracias a la interfaz que nos ofrece esta
+        herramienta, podemos identificar los datos con nulos o problemas de formato.
+        Finalmente haremos la limpieza de los datos que pueden perjedicar el análisis posterior.  
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 161234.png" alt="">
+      <p>
+        Ademas corregiremos el nombre de una columna(state/province) que nos puede perjedicar posteriormente
+        por ende nos dirigimos a la columna y seleccionamos "Rename column" para cambiar el nombre a "state_province".
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 161818.png" alt="">
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 161839.png" alt="">
+      <p>
+        Posteriormente a realizar estos cambios, editaremos nuestra configuracion
+        para llevarlos a Bigquery y realizar un análisis más profundo de los datos.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 161321.png" alt="">
+      <p>
+        Creamos una carpeta
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 161511.png" alt="">
+      <p>
+        Luego seleccionamos Bigquery y nos dirigimos a la carpeta que creamos donde tendremos
+        que crear una tabla para almacenar los datos que hemos limpiado y preparado.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 161550.png" alt="">
+      <p>
+        Nos dirigimos a crear una nueva tabla.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 161559.png" alt="">
+      <p>
+        Creamos la tabla como "avistamiento" como nos solicitan y le hacemos un truncate 
+        antes de cargar los datos para que no se repitan los datos.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 161727.png" alt="">
+      <p>
+        Verificamos los cambios a Bigquery.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 161929.png" alt="">
+      <p>
+        Ejecutamos la accion y esperamos que finalice.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 162055.png" alt="">
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 162602.png" alt="">
+      <p>
+        Cuando finalice el proceso podemos dirigirnos a Bigquery.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 163125.png" alt="">
+    </div>
+
+    <div class="paso">
+      <h2>Paso 7: Uso de Bigquery</h2>
+      <p>
+        Realizaremos diferentes consultas para obtener los resultados con su 
+        respectivos graficos con Loocker Studio.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 163149.png" alt="">
+      <p>
+        Nos dirigimos a la parte de "Query" para realizar las consultas.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 163421.png" alt="">
+      <p>
+        Grafico 1 en Loocker Studio.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 210730.png" alt="">
+      <p>
+        Realizamos la segunda Query.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 163607.png" alt="">
+      <p>
+        Grafico 2 en Loocker Studio.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 211031.png" alt="">
+      <p>
+        Realizamos la tercera Query.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 163754.png" alt="">
+      <p>
+        Grafico 3 en Loocker Studio.
+      </p>
+      <img src="ImaAvistamiento/Captura de pantalla 2025-05-25 211525.png" alt="">
+    </div>
+      
+     
+    <div class="paso">
+      <h2>Conclusion</h2>
+      <p>comentario.</p>
+      <img src="https://storage.googleapis.com/example/paso4.png" alt="">
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Duoc UC.</p>
+  </footer>
+</body>
+</html>
