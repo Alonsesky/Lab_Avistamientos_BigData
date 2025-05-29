@@ -61,3 +61,17 @@ footer {
   font-size: 0.9em;
   color: #888;
 }
+
+.section-text {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-left: 6px solid #4285F4;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.section-text h2 {
+  color: #4285F4;
+  margin-top: 0;
+}
